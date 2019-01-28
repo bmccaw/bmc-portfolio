@@ -13,6 +13,15 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+p, a, h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-family:  'Lobster', cursive;
 }
 
 svg {
@@ -44,7 +53,7 @@ header {
     margin:auto;
 }
 
-.about {
+#about {
     background-color: rgba(255, 255, 255, 0.7);
     grid-area: about;
     display:grid;
@@ -54,7 +63,7 @@ header {
     border-radius: 25px;
 }
 
-.work {
+#work {
     background-color: rgba(255, 255, 255, 0.7);
     grid-area: work;
     margin:auto;
@@ -64,11 +73,11 @@ header {
 }
 
 .project-cards {
-    width: 75vw;
+    width: 50vw;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     grid-gap: 1rem;
-    padding: 10px;
+    padding: 20px;
     margin: auto;
     max-height: 100%;
     overflow-y: auto;
@@ -87,8 +96,18 @@ header {
   .card-text {
     padding: 2px 16px;
   }
+  .grow{
+    transition: .5s ease;
+  }
+    
+  .grow:hover{
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    transition: .5s ease;
+  }
 
-.contact {
+#contact {
     background-color: rgba(255, 255, 255, 0.7);
     grid-area: contact;
     margin:auto;
