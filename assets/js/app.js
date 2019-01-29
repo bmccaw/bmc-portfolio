@@ -82,7 +82,7 @@ duration: 500})
                         triggerElement: "#contact",
                         duration: 500})
                                   .setPin("#contact")
-                                  .offset(150)
+                                  .offset(200)
                                   .addIndicators({name: "contact"})
                                   .addTo(controller);                     
 });
