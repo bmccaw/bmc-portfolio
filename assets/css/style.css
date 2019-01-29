@@ -17,6 +17,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: rgb(209, 73, 0)
+}
+
 p, a, h4 {
     font-family: 'Oswald', sans-serif;
 }
@@ -46,6 +50,7 @@ header {
 
 @media (max-width: 700px) {
     header {
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "logo"
                           "nav"
@@ -53,6 +58,9 @@ header {
     .nav {
         margin:auto;
         text-align:center;
+    }
+    body {
+        grid-template-rows:75px 500px 1fr 1fr 1fr 75px; 
     }
   }
 
@@ -74,6 +82,13 @@ header {
     width:75vw;
     padding: 10px;
     border-radius: 25px;
+}
+
+#profile-pic {
+    max-width: 25%;
+    max-height: auto;
+    float:left;
+    margin-right: 10px;
 }
 
 #work {
@@ -139,5 +154,5 @@ header {
     margin:auto;
     text-align: center;
     padding: 10px;
-    width:97.5vw;
+    border-radius: 25px;
 }
