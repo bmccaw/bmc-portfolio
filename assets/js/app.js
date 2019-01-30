@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     duration: "30%"
   })
     .setPin("#about")
-    .offset(200)
+    .offset(250)
     // .addIndicators({name: "about"})
     .addTo(controller);
 
