@@ -48,22 +48,6 @@ header {
     grid-template-areas: "logo . nav"
 }
 
-@media (max-width: 700px) {
-    header {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logo"
-                          "nav"
-    }
-    .nav {
-        margin:auto;
-        text-align:center;
-    }
-    body {
-        grid-template-rows:75px 500px 1fr 1fr 1fr 75px; 
-    }
-  }
-
 .logo {
     grid-area: logo;
 }
@@ -77,7 +61,6 @@ header {
 #about {
     background-color: rgba(255, 255, 255, 0.7);
     grid-area: about;
-    display:grid;
     margin:auto;
     width:50vw;
     padding: 10px;
@@ -161,3 +144,21 @@ p {
     padding: 10px;
     border-radius: 25px;
 }
+@media (max-width: 700px) {
+    header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo"
+                          "nav"
+    }
+    .nav {
+        margin:auto;
+        text-align:center;
+    }
+    body {
+        grid-template-rows:75px 700px 800px 1fr 800px 75px; 
+    }
+    #about, #work, #contact {
+        width:100%;
+    }
+  }
